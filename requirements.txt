@@ -7,4 +7,5 @@ protobuf==4.25.3
 pydantic==2.11.3
 python-dotenv==1.1.0
 Requests==2.32.3
+hypercorn==0.14.4
 uvicorn==0.34.0
