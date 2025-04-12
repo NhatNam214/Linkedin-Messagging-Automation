@@ -9,7 +9,7 @@ from utils import update_by_id, fetch_row_by_id, push_csv_to_sheets, get_rows_as
 from expandi import send_messages
 from dotenv import load_dotenv
 load_dotenv()
-
+import uvicorn
 app = FastAPI()
 
 app.add_middleware(
@@ -115,5 +115,5 @@ async def send(id: str = Query(...)):
 
     
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
