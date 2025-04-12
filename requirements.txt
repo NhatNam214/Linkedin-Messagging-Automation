@@ -1,11 +1,9 @@
-fastapi==0.115.12
-google_api_python_client==2.166.0
-google_auth_oauthlib==1.2.1
-langchain==0.3.23
+requests==2.32.3
 pandas==2.2.3
-protobuf==4.25.3
+dotenv==0.9.9
 pydantic==2.11.3
-python-dotenv==1.1.0
-Requests==2.32.3
-hypercorn==0.14.4
+fastapi==0.115.12
+langchain==0.3.23
+google-generativeai==0.8.4
+google-auth-oauthlib==1.2.1
 uvicorn==0.34.0
